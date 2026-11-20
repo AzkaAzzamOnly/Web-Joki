@@ -1,0 +1,6 @@
+{
+  "/page": "app/page.js",
+  "/order/mobile-legends/page": "app/order/mobile-legends/page.js",
+  "/order/genshin-impact/page": "app/order/genshin-impact/page.js",
+  "/order/roblox/page": "app/order/roblox/page.js"
+}

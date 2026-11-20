@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="100%" height="100%">
+  <defs>
+    <radialGradient id="roblox-glow" cx="40%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#2D1113" stop-opacity="0.8"/>
+      <stop offset="60%" stop-color="#14161D" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#0E1015" stop-opacity="1"/>
+    </radialGradient>
+    <linearGradient id="red-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF6B6B"/>
+      <stop offset="50%" stop-color="#F04444"/>
+      <stop offset="100%" stop-color="#B31E1E"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="1200" height="800" fill="#0E1015"/>
+  <rect width="1200" height="800" fill="url(#roblox-glow)"/>
+
+  <!-- Minimal Isometric Grid Accent -->
+  <g opacity="0.1" stroke="#F04444" stroke-width="1.5">
+    <path d="M100,500 L600,750 L1100,500 L600,250 Z" fill="none"/>
+    <path d="M200,450 L600,650 L1000,450 L600,250 Z" fill="none"/>
+    <path d="M300,400 L600,550 L900,400 L600,250 Z" fill="none"/>
+  </g>
+
+  <!-- Central Tilted Chevrons & Roblox Block Motif -->
+  <g transform="translate(600, 360)">
+    <!-- Tilted Square Outer -->
+    <rect x="-140" y="-140" width="280" height="280" rx="32" transform="rotate(18)" fill="#181B24" stroke="#F04444" stroke-width="3" opacity="0.8"/>
+    <!-- Tilted Square Accent -->
+    <rect x="-105" y="-105" width="210" height="210" rx="24" transform="rotate(18)" fill="url(#red-grad)" opacity="0.95"/>
+    <!-- Center Cutout (iconic square hole) -->
+    <rect x="-42" y="-42" width="84" height="84" rx="10" transform="rotate(18)" fill="#0E1015"/>
+
+    <!-- Small decorative companion blocks -->
+    <rect x="-260" y="-120" width="40" height="40" rx="6" transform="rotate(12)" fill="#F04444" opacity="0.4"/>
+    <rect x="230" y="80" width="50" height="50" rx="8" transform="rotate(25)" fill="#F3F4F6" opacity="0.3"/>
+  </g>
+
+  <!-- Title & Subtitle -->
+  <text x="600" y="620" text-anchor="middle" font-family="system-ui, sans-serif" font-weight="900" font-size="28" fill="#F3F4F6" letter-spacing="6">ROBLOX EXPERIENCES</text>
+  <text x="600" y="655" text-anchor="middle" font-family="system-ui, sans-serif" font-weight="600" font-size="14" fill="#F04444" letter-spacing="3">MULTI-EXPERIENCE SELECTION • BLOX FRUITS • PET SIM 99 • BLADE BALL</text>
+</svg>

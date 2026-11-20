@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="100%" height="100%">
+  <defs>
+    <radialGradient id="bg-glow" cx="40%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#241B08" stop-opacity="0.8"/>
+      <stop offset="60%" stop-color="#0E131C" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#090D14" stop-opacity="1"/>
+    </radialGradient>
+    <linearGradient id="gold-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFD700"/>
+      <stop offset="50%" stop-color="#E5A93B"/>
+      <stop offset="100%" stop-color="#996C15"/>
+    </linearGradient>
+    <linearGradient id="cyan-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00D4FF"/>
+      <stop offset="100%" stop-color="#006699"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="1200" height="800" fill="#090D14"/>
+  <rect width="1200" height="800" fill="url(#bg-glow)"/>
+
+  <!-- Subtle Tactical Grid Lines -->
+  <g opacity="0.08" stroke="#E5A93B" stroke-width="1">
+    <line x1="0" y1="200" x2="1200" y2="200"/>
+    <line x1="0" y1="400" x2="1200" y2="400"/>
+    <line x1="0" y1="600" x2="1200" y2="600"/>
+    <line x1="300" y1="0" x2="300" y2="800"/>
+    <line x1="600" y1="0" x2="600" y2="800"/>
+    <line x1="900" y1="0" x2="900" y2="800"/>
+  </g>
+
+  <!-- Central Crest / Geometric Mythic Wing Motif -->
+  <g transform="translate(600, 360)">
+    <!-- Outer Diamond shield -->
+    <polygon points="0,-240 220,-20 0,220 -220,-20" fill="none" stroke="#E5A93B" stroke-width="2" opacity="0.2"/>
+    <polygon points="0,-210 190,-10 0,190 -190,-10" fill="#111823" stroke="#E5A93B" stroke-width="3" opacity="0.8"/>
+    
+    <!-- Inner Radiant Blades -->
+    <path d="M0,-180 L35,-50 L140,-30 L45,30 L60,140 L0,70 L-60,140 L-45,30 L-140,-30 L-35,-50 Z" fill="url(#gold-grad)" opacity="0.9"/>
+    <circle cx="0" cy="0" r="45" fill="#090D14" stroke="#00D4FF" stroke-width="4"/>
+    <polygon points="0,-25 15,15 -15,15" fill="#00D4FF"/>
+
+    <!-- Wing Flairs -->
+    <path d="M190,-10 L320,-80 L260,40 Z" fill="url(#gold-grad)" opacity="0.3"/>
+    <path d="M-190,-10 L-320,-80 L-260,40 Z" fill="url(#gold-grad)" opacity="0.3"/>
+  </g>
+
+  <!-- Game Category Callout -->
+  <text x="600" y="620" text-anchor="middle" font-family="system-ui, sans-serif" font-weight="900" font-size="28" fill="#F3F4F6" letter-spacing="6">MOBILE LEGENDS: BANG BANG</text>
+  <text x="600" y="655" text-anchor="middle" font-family="system-ui, sans-serif" font-weight="600" font-size="14" fill="#E5A93B" letter-spacing="3">COMPETITIVE RANKED ARENA • TIER MYTHIC & IMMORTAL</text>
+</svg>
